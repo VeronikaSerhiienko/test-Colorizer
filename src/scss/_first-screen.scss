@@ -1,0 +1,125 @@
+.first-screen {
+  
+  background-color: #2e3138;
+  padding: 50px 10px 100px;
+
+  &__container {
+
+    @media  screen and (min-width: 750px) {
+      width: 730px;
+      margin: 0 auto;
+    }
+
+    @media  screen and (min-width: 960px) {
+      width: 940px;
+      margin: 0 auto;
+    }
+  }
+
+  &__button-beta-awards {
+    width: 300px;
+    margin: 0 auto 40px;
+    text-align: center;
+
+    @media  screen and (min-width: 750px) {
+      float: right;
+    }
+
+    @media  screen and (min-width: 750px) {
+      float: right;
+      width: auto;
+    }
+  }
+
+  &__button-wrapper {
+    margin-bottom: 50px;
+
+    @media  screen and (min-width: 960px) {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+  
+  &__beta-wrapper {
+    width: 273px;
+    margin: 0 auto;
+    
+    @media  screen and (min-width: 960px) {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 10px;
+      margin-left: 10px;
+      width: 170px;
+    }
+  }
+
+  &__beta-image {
+    display: block;
+    width: 70px;
+  }
+
+  &__beta {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__beta-text {
+    color: #acadb5;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  &__logo {
+    display: block;
+    width: 240px;
+    margin-bottom: 30px;
+  }
+
+  &__awards {
+    padding: 20px 0;
+    width: 300px;
+    background-image: url('../image/bg/awards.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    margin-bottom: 60px;
+  }
+
+  &__button {
+    margin: 0 auto 4px;
+  }
+
+  &__button-tip-icon {
+    height: 15px;
+    padding: 0 5px;
+  }
+
+  &__button-tip {
+    color: #a2abb7;
+    font-size: 12px;
+  }
+
+  &__folder-menu {
+    display: block;
+    width: 300px;
+    margin-bottom: 30px;
+
+    @media  screen and (min-width: 960px) {
+      width: 400px;
+    }
+  }
+
+  &__image-link {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+
+    @media  screen and (min-width: 750px) {
+      float: left;
+    }
+
+    @media  screen and (min-width: 960px) {
+      width: 400px;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.testing {
+  padding: 50px 15px 100px;
+  text-align: center;
+
+  &__container {
+
+    @media  screen and (min-width: 750px) {
+      width: 730px;
+      margin: 0 auto;
+    }
+
+    @media  screen and (min-width: 960px) {
+      width: 940px;
+      margin: 0 auto;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    @media  screen and (min-width: 650px) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+
+    @media  screen and (min-width: 650px) {
+      font-size: 40px;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__social-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    @media  screen and (min-width: 650px) {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__social-icon-wrapper {
+    padding: 10px 25px;
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    border-radius: 16px;
+  }
+
+  &__button {
+    margin-bottom: 4px;
+    margin: 0 auto;
+  }
+
+  &__button-tip-icon {
+    height: 15px;
+    padding: 0 5px;
+  }
+  &__button-tip {
+    margin-bottom: 20px;
+    color: #a2abb7;
+    @media  screen and (min-width: 650px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__social-icon {
+    display: inline-block;
+    padding: 8px 12px;
+    color: white;
+    background-color: #3b5998;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    };
+
+    &--twitter {
+      padding: 8px 8px;
+      background-color: #55acee;
+    }
+
+    &--google {
+      padding: 8px 7px;
+      background-color: #dc4e41;
+    }
+
+    &--pinterest {
+      padding: 8px 10px;
+      background-color: #cb2027;
+    }
+  }
+}

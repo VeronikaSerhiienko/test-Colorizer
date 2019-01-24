@@ -1,0 +1,56 @@
+.from-boring-to-color {
+  background-color: #222529;
+  color: white;
+  padding: 50px 15px;
+
+  &__container {
+
+    @media  screen and (min-width: 750px) {
+      width: 730px;
+      margin: 0 auto;
+    }
+
+    @media  screen and (min-width: 960px) {
+      width: 940px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__paragraph {
+    margin-bottom: 30px;
+    color: #acadb5;
+    @media  screen and (min-width: 630px) {
+      width: 100%;
+      margin-right: 8px;
+    }
+  }
+
+  &__link {
+    margin-bottom: 30px;
+    @media  screen and (min-width: 630px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-wrapper {
+    @media  screen and (min-width: 630px) {
+      display: inline-block;
+      vertical-align: top; 
+      width: 55%;
+      margin-right: 20px;
+    }
+  }
+
+  &__image {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    @media  screen and (min-width: 630px) {
+      width: 40%;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.join-the-beta {
+  
+  padding: 20px 10px;
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+  
+  &__container {
+
+    @media  screen and (min-width: 750px) {
+      width: 730px;
+      margin: 0 auto;
+    }
+
+    @media  screen and (min-width: 960px) {
+      width: 940px;
+      margin: 0 auto;
+    }
+  }
+
+  &__wrapper {
+    @media  screen and (min-width: 750px) {
+      width: 715px;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    margin: 0 auto;
+    display: block;
+    width: 210px;
+    margin-bottom: 20px;
+
+    @media  screen and (min-width: 768px) {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__folder {    
+    display: block;
+    padding: 20px 0;
+    background-image: url('../image/bg/folders.png');
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 20px;
+
+    @media  screen and (min-width: 768px) {
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      margin-right: 50px;
+      margin-bottom: 0;
+      width: 150px;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 29px;
+        height: 56px;
+        position: absolute;
+        top: 6px;
+        left: -40px;
+        background-image: url('../image/bg/greyArrow.png');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position:  40% 0%
+      };
+
+      &:after {
+        content: "";
+        display: block;
+        width: 29px;
+        height: 56px;
+        position: absolute;
+        top: 6px;
+        right: -40px;
+        background-image: url('../image/bg/greyArrow.png');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position:  40% 0%
+      };
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+
+    @media  screen and (min-width: 768px) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+} 

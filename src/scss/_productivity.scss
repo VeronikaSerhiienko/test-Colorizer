@@ -1,0 +1,119 @@
+.productivity {
+  color: white;
+  text-transform: capitalize;
+  background-color: #f6c500;
+  background-image: url('../image/bg/Natali.png');
+  background-size: 240px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 50px 10px 150px 10px;
+  text-align: center;
+
+
+  @media  screen and (min-width: 650px) {
+    background-position: 80% bottom;
+    background-size: 550px;
+    text-align: left;
+  }
+
+  @media  screen and (min-width: 960px) {
+    background-position: 70% bottom;
+  }
+
+  &__text {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 300px;
+
+    @media  screen and (min-width: 700px) {
+      left: 75px;
+    }
+
+    @media  screen and (min-width: 960px) {
+      left: 150px;
+    }
+
+    @media  screen and (min-width: 1200px) {
+      left: 300px;
+    }
+  }
+
+  &__button-triangle {
+    width: 34px;
+    padding: 0 4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__title {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  &__button {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  &__pop-up-wrapper {
+    display: none;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,25,25,0.8);
+    cursor: pointer;
+  }
+
+  &__pop-up {
+    position: fixed;
+    display: none;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    width: 600px;
+    height: 355px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: .64s ease-in-out;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.75);
+  }
+
+  &__pop-up-button-close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+    border: 0;
+    font-weight: 300;
+    border-radius: 100%;
+    background-color: #0A0A0A;
+    z-index: 4;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 11px 2px cyan;
+      color: cyan;
+    };
+  }
+}
+
+.visible {
+  display: block;
+}
