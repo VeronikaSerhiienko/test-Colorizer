@@ -8,6 +8,15 @@
     text-align: left;
   }
 
+  &__link-for-seo {
+    text-decoration: none;
+    color: white;
+    
+    &:hover {
+      text-decoration: underline;
+    };
+  }
+
   &__container {
 
     @media  screen and (min-width: 750px) {

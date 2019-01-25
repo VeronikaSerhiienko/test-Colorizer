@@ -30,29 +30,23 @@
   }
 
   &__logo {
-    margin: 0 auto;
-    width: 210px;
-    margin-bottom: 20px;
-    width: 210px;
-    height: 49px;
-    background: url('../image/bg/css_sprites.png') -330px -163px;
-
+    display: none;
+    
     @media  screen and (min-width: 768px) {
       display: inline-block;
       vertical-align: middle;
       margin-right: 50px;
       margin-bottom: 0;
+      width: 210px;
+      height: 49px;
+      background: url('../image/bg/css_sprites.png') -330px -163px;
+
     }
   }
 
   &__folder {    
-    display: block;
-    padding: 20px 0;
-    margin: 0 auto 20px;
-    width: 150px;
-    height: 33px;
-    background: url('../image/bg/css_sprites.png') -130px -490px;
-    
+    display: none;
+
     @media  screen and (min-width: 768px) {
       display: inline-block;
       position: relative;
@@ -61,7 +55,9 @@
       margin-right: 50px;
       margin-bottom: 0;
       width: 150px;
-
+      height: 33px;
+      background: url('../image/bg/css_sprites.png') -130px -490px;
+    
       &:before {
         content: "";
         display: block;
