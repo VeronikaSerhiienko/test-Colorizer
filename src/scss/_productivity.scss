@@ -19,8 +19,7 @@
   }
 
   &__bg-image {
-    display: none;
-   
+    display: none;   
     
     @media  screen and (min-width: 750px) {
       display: inline-block;
@@ -38,10 +37,6 @@
     display: inline-block;
     text-align: center;
     width: 300px;
-
-    // @media  screen and (min-width: 750px) {
-      
-    // }
   }
 
   &__button-triangle {
@@ -68,6 +63,11 @@
     padding: 10px 15px;
     background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+      box-shadow: 0px 0px 9px 7px rgba(255,255,255,0.75);
+    };
   }
 
   &__pop-up-wrapper {
@@ -124,158 +124,3 @@
 .visible {
   display: block;
 }
-
-
-// x
-
-// .bg-awards {
-//     width: 300px; height: 26px;
-//     background: url('css_sprites.png') -204px -351px;
-// }
-
-// x
-
-// .bg-beta {
-//     width: 200px; height: 41px;
-//     background: url('css_sprites.png') -130px -429px;
-// }
-
-// x
-
-// .bg-blackArrow {
-//     width: 40px; height: 17px;
-//     background: url('css_sprites.png') -590px -133px;
-// }
-
-// x
-
-// .bg-fc2 {
-//     width: 210px; height: 49px;
-//     background: url('css_sprites.png') -330px -163px;
-// }
-
-// x
-
-// .bg-folderColorizer {
-//     width: 240px; height: 55px;
-//     background: url('css_sprites.png') -330px -10px;
-// }
-
-// x
-
-// .bg-folders {
-//     width: 150px; height: 33px;
-//     background: url('css_sprites.png') -130px -490px;
-// }
-
-// x
-
-// .bg-greyArrow {
-//     width: 13px; height: 26px;
-//     background: url('css_sprites.png') -590px -293px;
-// }
-
-// x
-
-// .bg-link {
-//     width: 18px; height: 22px;
-//     background: url('css_sprites.png') -590px -251px;
-// }
-
-// x
-
-// .bg-logo {
-//     width: 50px; height: 40px;
-//     background: url('css_sprites.png') -590px -10px;
-// }
-
-// x
-
-// .bg-logo1 {
-//     width: 174px; height: 58px;
-//     background: url('css_sprites.png') -10px -351px;
-// }
-
-// x
-
-// .bg-logo2 {
-//     width: 223px; height: 58px;
-//     background: url('css_sprites.png') -330px -85px;
-// }
-
-// x
-
-// .bg-logo3 {
-//     width: 188px; height: 55px;
-//     background: url('css_sprites.png') -10px -276px;
-// }
-
-// x
-
-// .bg-logo4 {
-//     width: 300px; height: 28px;
-//     background: url('css_sprites.png') -218px -276px;
-// }
-
-// x
-
-// .bg-logo5 {
-//     width: 300px; height: 44px;
-//     background: url('css_sprites.png') -10px -212px;
-// }
-
-// x
-
-// .bg-Mark {
-//     width: 100px; height: 100px;
-//     background: url('css_sprites.png') -10px -429px;
-// }
-
-// x
-
-// .bg-PCWorld_red {
-//     width: 160px; height: 35px;
-//     background: url('css_sprites.png') -350px -429px;
-// }
-
-// x
-
-// .bg-playVideo {
-//     width: 21px; height: 21px;
-//     background: url('css_sprites.png') -590px -170px;
-// }
-
-// x
-
-// .bg-red1 {
-//     width: 10px; height: 10px;
-//     background: url('css_sprites.png') -630px -211px;
-// }
-
-// x
-
-// .bg-triangle {
-//     width: 34px; height: 43px;
-//     background: url('css_sprites.png') -590px -70px;
-// }
-
-// x
-
-// .bg-usa {
-//     width: 10px; height: 10px;
-//     background: url('css_sprites.png') -628px -251px;
-// }
-
-// x
-
-// .bg-windowsIcon {
-//     width: 20px; height: 20px;
-//     background: url('css_sprites.png') -590px -211px;
-// }
-
-// x
-
-// .bg-Natalii {
-//     width: 300px; height: 182px;
-//     background: url('css_sprites.png') -10px -10px;
-// }

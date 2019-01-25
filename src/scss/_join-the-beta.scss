@@ -22,6 +22,7 @@
   }
 
   &__wrapper {
+    
     @media  screen and (min-width: 750px) {
       width: 715px;
       margin: 0 auto;
@@ -30,9 +31,11 @@
 
   &__logo {
     margin: 0 auto;
-    display: block;
     width: 210px;
     margin-bottom: 20px;
+    width: 210px;
+    height: 49px;
+    background: url('../image/bg/css_sprites.png') -330px -163px;
 
     @media  screen and (min-width: 768px) {
       display: inline-block;
@@ -94,7 +97,6 @@
   }
 }
 
-
 .visible {
-  display: block;
+  display: block
 }

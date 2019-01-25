@@ -59,6 +59,7 @@
 
       &:last-child {
         margin-right: 0;
+
         &:after {
           display: none;
         };
@@ -80,12 +81,14 @@
     };
 
     &--second {
+
       &::before {
         content: "2";
       }
     }
 
     &--third {
+      
       &::before {
         content: "3";
       }

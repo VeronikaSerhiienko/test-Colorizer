@@ -28,6 +28,7 @@
   &__paragraph {
     margin-bottom: 30px;
     color: #acadb5;
+
     @media  screen and (min-width: 630px) {
       width: 100%;
       margin-right: 8px;
@@ -43,6 +44,7 @@
   }
   
   &__text-wrapper {
+    
     @media  screen and (min-width: 630px) {
       float: right;
       width: 55%;

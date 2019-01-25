@@ -30,6 +30,16 @@ body {
   background-color: #05bf4b;
   border: 0;
   border-radius: 16px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.green-button:hover {
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);
+}
+
+.green-button--whiteShadow:hover {
+  box-shadow: 0px 0px 9px 1px rgba(255, 255, 255, 0.75);
 }
 
 .blue-link {
@@ -444,6 +454,11 @@ body {
   padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  transition: 1s;
+}
+
+.productivity__button:hover {
+  box-shadow: 0px 0px 9px 7px rgba(255, 255, 255, 0.75);
 }
 
 .productivity__pop-up-wrapper {
@@ -1194,6 +1209,12 @@ body {
   background-color: #3b5998;
   border-radius: 50%;
   margin-right: 10px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.testing__social-icon:hover {
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);
 }
 
 .testing__social-icon:last-child {
@@ -1249,9 +1270,11 @@ body {
 
 .join-the-beta__logo {
   margin: 0 auto;
-  display: block;
   width: 210px;
   margin-bottom: 20px;
+  width: 210px;
+  height: 49px;
+  background: url("../image/bg/css_sprites.png") -330px -163px;
 }
 
 @media screen and (min-width: 768px) {

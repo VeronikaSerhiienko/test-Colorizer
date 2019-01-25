@@ -28,6 +28,7 @@
   &__paragraph {
     margin-bottom: 30px;
     color: #acadb5;
+
     @media  screen and (min-width: 630px) {
       width: 100%;
       margin-right: 8px;
@@ -36,12 +37,14 @@
 
   &__link {
     margin-bottom: 30px;
+
     @media  screen and (min-width: 630px) {
       margin-bottom: 0;
     }
   }
 
   &__text-wrapper {
+
     @media  screen and (min-width: 630px) {
       display: inline-block;
       vertical-align: top; 
@@ -54,6 +57,7 @@
     display: inline-block;
     vertical-align: top;
     width: 300px;
+    
     @media  screen and (min-width: 630px) {
       width: 40%;
     }

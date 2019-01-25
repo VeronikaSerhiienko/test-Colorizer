@@ -3,6 +3,7 @@
   padding: 50px 15px;
 
   &__wrapper {
+
     @media  screen and (min-width: 796px) {
       display: block;
       margin: 0 auto;
@@ -24,6 +25,7 @@
   }
 
   &__list {
+
     @media  screen and (min-width: 796px) {
       display: inline-block;
     }
@@ -43,6 +45,7 @@
 
     &:last-child {
       margin-bottom: 0;
+
         @media  screen and (min-width: 796px) {
           margin-right: 0;
         }
@@ -51,6 +54,7 @@
 
   &__logo {
     width: 189px;
+    
     @media  screen and (min-width: 796px) {
       width: 100px;
     }
