@@ -1186,7 +1186,13 @@ body {
 }
 
 .join-the-beta {
+  display: none;
   padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
   box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.75);
 }
 
@@ -1284,4 +1290,8 @@ body {
     display: inline-block;
     vertical-align: middle;
   }
+}
+
+.visible {
+  display: block;
 }
