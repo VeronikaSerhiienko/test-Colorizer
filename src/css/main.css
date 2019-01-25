@@ -450,6 +450,7 @@ body {
   border-radius: 10px;
   padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
 .productivity__pop-up-wrapper {
