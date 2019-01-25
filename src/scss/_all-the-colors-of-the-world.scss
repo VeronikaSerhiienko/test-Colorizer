@@ -2,6 +2,11 @@
   background-color: #2e3138;
   color: white;
   padding: 50px 15px;
+  text-align: center;
+
+  @media  screen and (min-width: 750px) {
+    text-align: left;
+  }
 
   &__container {
 
@@ -39,20 +44,20 @@
   
   &__text-wrapper {
     @media  screen and (min-width: 630px) {
-      display: inline-block;
-      vertical-align: top; 
+      float: right;
       width: 55%;
       margin-right: 20px;
     }
   }
 
-  &__image {
-    display: inline-block;
-    vertical-align: top;
+  &__image {    
+    display: block;
     width: 300px;
+    margin: 0 auto;
 
     @media  screen and (min-width: 630px) {
       width: 40%;
+      float: left;
     }
   }
 }

@@ -10,11 +10,12 @@
     content: "";
     display: inline-block;
     vertical-align: middle;
-    width: 30px;
-    height: 30px;
-    background-image: url('../image/bg/link.png');
-    background-repeat: no-repeat;
-    background-size: 70%;
+    margin-right: 10px;
+    position: relative;
+    top: -4px;
+    width: 18px;
+    height: 22px;
+    background: url('../image/bg/css_sprites.png') -590px -251px;
   };
 
   &--video {
@@ -23,8 +24,13 @@
 
     &::before {
       content: "";
-      background-image: url('../image/bg/playVideo.png');
-      background-position: 0% 35%
+      display: inline-block;
+      position: relative;
+      top: -2px;
+      width: 21px;
+      height: 21px;
+      margin-right: 10px;
+      background: url('../image/bg/css_sprites.png') -590px -170px;
     }
   }
 

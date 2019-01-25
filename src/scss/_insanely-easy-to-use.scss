@@ -23,7 +23,8 @@
 
   &__image {
     display: block;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: 30px;
   }
 
@@ -41,22 +42,19 @@
 
     @media  screen and (min-width: 650px) {
       display: inline-block;
-      margin-right: 75px;
+      margin-right: 100px;
       margin-bottom: 0;
       position: relative;
 
       &:after {
         content: "";
         display: block;
-        width: 75px;
-        height: 32px;
         position: absolute;
         top: 8px;
-        right: -80px;
-        background-image: url('../image/bg/blackArrow.png');
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position:  40% 0%
+        right: -70px;
+        width: 40px;
+        height: 17px;
+        background: url('../image/bg/css_sprites.png') -590px -133px;
       };
 
       &:last-child {

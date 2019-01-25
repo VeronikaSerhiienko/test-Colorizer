@@ -69,17 +69,18 @@ function onPlayerReady(event) {
  });
 }
 
-;(function() {
+;(function() {  
+  window.onload = function() {
   var beta = document.querySelector('.js-beta');
   var originalY = document.querySelector('.js-original-colorizer').offsetTop;
   var testingY = document.querySelector('.js-colorizer-testing').offsetTop;
   window.onscroll = function() {
     var pageY = window.pageYOffset || document.documentElement.scrollTop;
-
-          if (pageY >= originalY && pageY <= testingY) {
-            beta.classList.add('visible');
-          } else {
-            beta.classList.remove('visible');
-          }
-      };
+    if (pageY >= originalY && pageY <= testingY) {
+      beta.classList.add('visible');
+    } else {
+      beta.classList.remove('visible');
+    }
+   };
+  };
 })();

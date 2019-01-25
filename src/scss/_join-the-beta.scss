@@ -1,6 +1,6 @@
 .join-the-beta {
   display: none;
-  padding: 20px 10px;
+  padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -45,15 +45,15 @@
   &__folder {    
     display: block;
     padding: 20px 0;
-    background-image: url('../image/bg/folders.png');
-    background-size: 150px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-bottom: 20px;
-
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 33px;
+    background: url('../image/bg/css_sprites.png') -130px -490px;
+    
     @media  screen and (min-width: 768px) {
       display: inline-block;
       position: relative;
+      top: 2px;
       vertical-align: middle;
       margin-right: 50px;
       margin-bottom: 0;
@@ -62,29 +62,23 @@
       &:before {
         content: "";
         display: block;
-        width: 29px;
-        height: 56px;
         position: absolute;
         top: 6px;
         left: -40px;
-        background-image: url('../image/bg/greyArrow.png');
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position:  40% 0%
+        width: 13px;
+        height: 26px;
+        background: url('../image/bg/css_sprites.png') -590px -293px;
       };
 
       &:after {
         content: "";
         display: block;
-        width: 29px;
-        height: 56px;
         position: absolute;
         top: 6px;
         right: -40px;
-        background-image: url('../image/bg/greyArrow.png');
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position:  40% 0%
+        width: 13px;
+        height: 26px;
+        background: url('../image/bg/css_sprites.png') -590px -293px;
       };
     }
   }

@@ -1,42 +1,47 @@
 .productivity {
   color: white;
   text-transform: capitalize;
-  background-color: #f6c500;
-  background-image: url('../image/bg/Natali.png');
-  background-size: 240px;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  padding: 50px 10px 150px 10px;
-  text-align: center;
+  background-color: #f6c500;  
+  padding: 50px 10px 50px 10px;
 
+  &__container {
+    text-align: center;
 
-  @media  screen and (min-width: 650px) {
-    background-position: 80% bottom;
-    background-size: 550px;
-    text-align: left;
+    @media  screen and (min-width: 750px) {
+      width: 730px;
+      margin: 0 auto;
+    }
+
+    @media  screen and (min-width: 960px) {
+      width: 940px;
+      margin: 0 auto;
+    }
   }
 
-  @media  screen and (min-width: 960px) {
-    background-position: 70% bottom;
+  &__bg-image {
+    display: none;
+   
+    
+    @media  screen and (min-width: 750px) {
+      display: inline-block;
+      position: relative;
+      bottom: -72px;
+      background-image: url('../image/bg/Natali.png');
+      background-size: 400px;
+      background-repeat: no-repeat;
+      width: 400px;
+      height: 200px;
+    }
   }
 
   &__text {
     display: inline-block;
-    position: relative;
     text-align: center;
     width: 300px;
 
-    @media  screen and (min-width: 700px) {
-      left: 75px;
-    }
-
-    @media  screen and (min-width: 960px) {
-      left: 150px;
-    }
-
-    @media  screen and (min-width: 1200px) {
-      left: 300px;
-    }
+    // @media  screen and (min-width: 750px) {
+      
+    // }
   }
 
   &__button-triangle {
@@ -48,9 +53,10 @@
 
   &__title {
     color: white;
-    font-size: 35px;
-    margin-bottom: 20px;
+    font-size: 38px;
+    margin-bottom: 40px;
   }
+
   &__button {
     display: inline-block;
     vertical-align: middle;
@@ -118,3 +124,158 @@
 .visible {
   display: block;
 }
+
+
+// x
+
+// .bg-awards {
+//     width: 300px; height: 26px;
+//     background: url('css_sprites.png') -204px -351px;
+// }
+
+// x
+
+// .bg-beta {
+//     width: 200px; height: 41px;
+//     background: url('css_sprites.png') -130px -429px;
+// }
+
+// x
+
+// .bg-blackArrow {
+//     width: 40px; height: 17px;
+//     background: url('css_sprites.png') -590px -133px;
+// }
+
+// x
+
+// .bg-fc2 {
+//     width: 210px; height: 49px;
+//     background: url('css_sprites.png') -330px -163px;
+// }
+
+// x
+
+// .bg-folderColorizer {
+//     width: 240px; height: 55px;
+//     background: url('css_sprites.png') -330px -10px;
+// }
+
+// x
+
+// .bg-folders {
+//     width: 150px; height: 33px;
+//     background: url('css_sprites.png') -130px -490px;
+// }
+
+// x
+
+// .bg-greyArrow {
+//     width: 13px; height: 26px;
+//     background: url('css_sprites.png') -590px -293px;
+// }
+
+// x
+
+// .bg-link {
+//     width: 18px; height: 22px;
+//     background: url('css_sprites.png') -590px -251px;
+// }
+
+// x
+
+// .bg-logo {
+//     width: 50px; height: 40px;
+//     background: url('css_sprites.png') -590px -10px;
+// }
+
+// x
+
+// .bg-logo1 {
+//     width: 174px; height: 58px;
+//     background: url('css_sprites.png') -10px -351px;
+// }
+
+// x
+
+// .bg-logo2 {
+//     width: 223px; height: 58px;
+//     background: url('css_sprites.png') -330px -85px;
+// }
+
+// x
+
+// .bg-logo3 {
+//     width: 188px; height: 55px;
+//     background: url('css_sprites.png') -10px -276px;
+// }
+
+// x
+
+// .bg-logo4 {
+//     width: 300px; height: 28px;
+//     background: url('css_sprites.png') -218px -276px;
+// }
+
+// x
+
+// .bg-logo5 {
+//     width: 300px; height: 44px;
+//     background: url('css_sprites.png') -10px -212px;
+// }
+
+// x
+
+// .bg-Mark {
+//     width: 100px; height: 100px;
+//     background: url('css_sprites.png') -10px -429px;
+// }
+
+// x
+
+// .bg-PCWorld_red {
+//     width: 160px; height: 35px;
+//     background: url('css_sprites.png') -350px -429px;
+// }
+
+// x
+
+// .bg-playVideo {
+//     width: 21px; height: 21px;
+//     background: url('css_sprites.png') -590px -170px;
+// }
+
+// x
+
+// .bg-red1 {
+//     width: 10px; height: 10px;
+//     background: url('css_sprites.png') -630px -211px;
+// }
+
+// x
+
+// .bg-triangle {
+//     width: 34px; height: 43px;
+//     background: url('css_sprites.png') -590px -70px;
+// }
+
+// x
+
+// .bg-usa {
+//     width: 10px; height: 10px;
+//     background: url('css_sprites.png') -628px -251px;
+// }
+
+// x
+
+// .bg-windowsIcon {
+//     width: 20px; height: 20px;
+//     background: url('css_sprites.png') -590px -211px;
+// }
+
+// x
+
+// .bg-Natalii {
+//     width: 300px; height: 182px;
+//     background: url('css_sprites.png') -10px -10px;
+// }

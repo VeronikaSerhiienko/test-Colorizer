@@ -40,49 +40,33 @@
     }
   }
   
-  &__beta-wrapper {
-    width: 273px;
+  &__beta-image {
+    width: 200px;
+    height: 41px;
+    background: url('../image/bg/css_sprites.png') -130px -429px;
     margin: 0 auto;
     
     @media  screen and (min-width: 960px) {
       display: inline-block;
+      position: relative;
+      top: 5px;
       vertical-align: top;
-      padding-top: 10px;
       margin-left: 10px;
-      width: 170px;
     }
   }
 
-  &__beta-image {
-    display: block;
-    width: 70px;
-  }
-
-  &__beta {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  &__beta-text {
-    color: #acadb5;
-    font-size: 10px;
-    text-align: left;
-  }
-
   &__logo {
-    display: block;
     width: 240px;
-    margin-bottom: 30px;
+    height: 55px;
+    background: url('../image/bg/css_sprites.png') -330px -10px;
+    margin-bottom: 50px;
   }
 
   &__awards {
-    padding: 20px 0;
     width: 300px;
-    background-image: url('../image/bg/awards.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
-    margin-bottom: 60px;
+    height: 26px;
+    background: url('../image/bg/css_sprites.png') -204px -351px;
+    margin-bottom: 80px;
   }
 
   &__button {

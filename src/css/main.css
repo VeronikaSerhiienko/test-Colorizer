@@ -45,11 +45,12 @@ body {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  width: 30px;
-  height: 30px;
-  background-image: url("../image/bg/link.png");
-  background-repeat: no-repeat;
-  background-size: 70%;
+  margin-right: 10px;
+  position: relative;
+  top: -4px;
+  width: 18px;
+  height: 22px;
+  background: url("../image/bg/css_sprites.png") -590px -251px;
 }
 
 .blue-link--video {
@@ -59,8 +60,13 @@ body {
 
 .blue-link--video::before {
   content: "";
-  background-image: url("../image/bg/playVideo.png");
-  background-position: 0% 35%;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+  background: url("../image/bg/css_sprites.png") -590px -170px;
 }
 
 .blue-link::after {
@@ -91,6 +97,12 @@ body {
     width: 940px;
     margin: 0 auto;
   }
+}
+
+.top-menu__logo {
+  width: 50px;
+  height: 40px;
+  background: url("../image/bg/css_sprites.png") -590px -10px;
 }
 
 .top-menu__link {
@@ -173,13 +185,11 @@ body {
 .top-menu__flag:after {
   content: "";
   display: inline-block;
-  width: 15px;
-  height: 15px;
   position: absolute;
   right: 35px;
-  background-image: url("../image/bg/usa.png");
-  background-size: 70%;
-  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  background: url("../image/bg/css_sprites.png") -628px -251px;
 }
 
 @media screen and (min-width: 700px) {
@@ -191,7 +201,9 @@ body {
 .top-menu__flag--red:after {
   content: "";
   right: 30px;
-  background-image: url("../image/bg/red1.png");
+  width: 10px;
+  height: 10px;
+  background: url("../image/bg/css_sprites.png") -630px -211px;
 }
 
 @media screen and (min-width: 700px) {
@@ -285,51 +297,35 @@ body {
   }
 }
 
-.first-screen__beta-wrapper {
-  width: 273px;
+.first-screen__beta-image {
+  width: 200px;
+  height: 41px;
+  background: url("../image/bg/css_sprites.png") -130px -429px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 960px) {
-  .first-screen__beta-wrapper {
+  .first-screen__beta-image {
     display: inline-block;
+    position: relative;
+    top: 5px;
     vertical-align: top;
-    padding-top: 10px;
     margin-left: 10px;
-    width: 170px;
   }
 }
 
-.first-screen__beta-image {
-  display: block;
-  width: 70px;
-}
-
-.first-screen__beta {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.first-screen__beta-text {
-  color: #acadb5;
-  font-size: 10px;
-  text-align: left;
-}
-
 .first-screen__logo {
-  display: block;
   width: 240px;
-  margin-bottom: 30px;
+  height: 55px;
+  background: url("../image/bg/css_sprites.png") -330px -10px;
+  margin-bottom: 50px;
 }
 
 .first-screen__awards {
-  padding: 20px 0;
   width: 300px;
-  background-image: url("../image/bg/awards.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 50% 50%;
-  margin-bottom: 60px;
+  height: 26px;
+  background: url("../image/bg/css_sprites.png") -204px -351px;
+  margin-bottom: 80px;
 }
 
 .first-screen__button {
@@ -380,51 +376,48 @@ body {
   color: white;
   text-transform: capitalize;
   background-color: #f6c500;
-  background-image: url("../image/bg/Natali.png");
-  background-size: 240px;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  padding: 50px 10px 150px 10px;
+  padding: 50px 10px 50px 10px;
+}
+
+.productivity__container {
   text-align: center;
 }
 
-@media screen and (min-width: 650px) {
-  .productivity {
-    background-position: 80% bottom;
-    background-size: 550px;
-    text-align: left;
+@media screen and (min-width: 750px) {
+  .productivity__container {
+    width: 730px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .productivity {
-    background-position: 70% bottom;
+  .productivity__container {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.productivity__bg-image {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .productivity__bg-image {
+    display: inline-block;
+    position: relative;
+    bottom: -72px;
+    background-image: url("../image/bg/Natali.png");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
   }
 }
 
 .productivity__text {
   display: inline-block;
-  position: relative;
   text-align: center;
   width: 300px;
-}
-
-@media screen and (min-width: 700px) {
-  .productivity__text {
-    left: 75px;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .productivity__text {
-    left: 150px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .productivity__text {
-    left: 300px;
-  }
 }
 
 .productivity__button-triangle {
@@ -436,8 +429,8 @@ body {
 
 .productivity__title {
   color: white;
-  font-size: 35px;
-  margin-bottom: 20px;
+  font-size: 38px;
+  margin-bottom: 40px;
 }
 
 .productivity__button {
@@ -519,6 +512,7 @@ body {
 @media screen and (min-width: 750px) {
   .original-folder-colorizer__container {
     width: 730px;
+    padding: 0 60px;
     margin: 0 auto;
   }
 }
@@ -526,6 +520,7 @@ body {
 @media screen and (min-width: 960px) {
   .original-folder-colorizer__container {
     width: 940px;
+    padding: 0 60px;
     margin: 0 auto;
   }
 }
@@ -546,12 +541,15 @@ body {
   margin-bottom: 70px;
 }
 
-.original-folder-colorizer__paragraph:nth-child(3) {
-  margin-bottom: 170px;
+@media screen and (min-width: 750px) {
+  .original-folder-colorizer__paragraph:nth-child(3) {
+    margin-bottom: 170px;
+  }
 }
 
 .original-folder-colorizer__diagram {
   display: block;
+  padding: 0 30px;
   width: 100%;
   margin-bottom: 70px;
 }
@@ -577,10 +575,9 @@ body {
 .original-folder-colorizer__company-name {
   margin: 0 auto 30px;
   padding: 24px 0;
-  background-image: url("../image/bg/PCWorld-red.png");
-  background-size: 150px auto;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  width: 160px;
+  height: 35px;
+  background: url("../image/bg/css_sprites.png") -350px -429px;
 }
 
 @media screen and (min-width: 750px) {
@@ -588,14 +585,16 @@ body {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
-    width: 240px;
-    background-position: 100% 50%;
   }
 }
 
 .original-folder-colorizer__image {
   display: block;
   margin: 0 auto 30px;
+  padding-left: 20px;
+  width: 100px;
+  height: 100px;
+  background: url("../image/bg/css_sprites.png") -10px -429px;
 }
 
 @media screen and (min-width: 750px) {
@@ -603,6 +602,9 @@ body {
     display: inline-block;
     vertical-align: middle;
     margin: 0 10px;
+    width: 100px;
+    height: 100px;
+    background: url("../image/bg/css_sprites.png") -10px -429px;
   }
 }
 
@@ -697,6 +699,13 @@ body {
   background-color: #222529;
   color: white;
   padding: 50px 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .from-boring-to-color {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -764,6 +773,13 @@ body {
   background-color: #2e3138;
   color: white;
   padding: 50px 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .all-the-colors-of-the-world {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -808,22 +824,22 @@ body {
 
 @media screen and (min-width: 630px) {
   .all-the-colors-of-the-world__text-wrapper {
-    display: inline-block;
-    vertical-align: top;
+    float: right;
     width: 55%;
     margin-right: 20px;
   }
 }
 
 .all-the-colors-of-the-world__image {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   width: 300px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 630px) {
   .all-the-colors-of-the-world__image {
     width: 40%;
+    float: left;
   }
 }
 
@@ -831,6 +847,13 @@ body {
   background-color: #222529;
   color: white;
   padding: 50px 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .make-folders-stand-out {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -921,7 +944,8 @@ body {
 
 .insanely-easy-to-use__image {
   display: block;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -941,22 +965,19 @@ body {
 @media screen and (min-width: 650px) {
   .insanely-easy-to-use__list-item {
     display: inline-block;
-    margin-right: 75px;
+    margin-right: 100px;
     margin-bottom: 0;
     position: relative;
   }
   .insanely-easy-to-use__list-item:after {
     content: "";
     display: block;
-    width: 75px;
-    height: 32px;
     position: absolute;
     top: 8px;
-    right: -80px;
-    background-image: url("../image/bg/blackArrow.png");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: 40% 0%;
+    right: -70px;
+    width: 40px;
+    height: 17px;
+    background: url("../image/bg/css_sprites.png") -590px -133px;
   }
   .insanely-easy-to-use__list-item:last-child {
     margin-right: 0;
@@ -996,6 +1017,13 @@ body {
   background-color: #2e3138;
   padding: 50px 15px 100px;
   color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .tutorials {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 750px) {
@@ -1028,12 +1056,14 @@ body {
 .tutorials__image {
   display: block;
   width: 300px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 630px) {
   .tutorials__image {
     float: left;
     width: 40%;
+    margin: 0;
   }
 }
 
@@ -1088,8 +1118,8 @@ body {
 
 .testing__image {
   display: block;
-  width: 100%;
-  margin-bottom: 50px;
+  width: 80%;
+  margin: 0 auto 50px;
 }
 
 @media screen and (min-width: 650px) {
@@ -1187,7 +1217,7 @@ body {
 
 .join-the-beta {
   display: none;
-  padding: 20px 10px;
+  padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1236,17 +1266,17 @@ body {
 .join-the-beta__folder {
   display: block;
   padding: 20px 0;
-  background-image: url("../image/bg/folders.png");
-  background-size: 150px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  width: 150px;
+  height: 33px;
+  background: url("../image/bg/css_sprites.png") -130px -490px;
 }
 
 @media screen and (min-width: 768px) {
   .join-the-beta__folder {
     display: inline-block;
     position: relative;
+    top: 2px;
     vertical-align: middle;
     margin-right: 50px;
     margin-bottom: 0;
@@ -1255,28 +1285,22 @@ body {
   .join-the-beta__folder:before {
     content: "";
     display: block;
-    width: 29px;
-    height: 56px;
     position: absolute;
     top: 6px;
     left: -40px;
-    background-image: url("../image/bg/greyArrow.png");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: 40% 0%;
+    width: 13px;
+    height: 26px;
+    background: url("../image/bg/css_sprites.png") -590px -293px;
   }
   .join-the-beta__folder:after {
     content: "";
     display: block;
-    width: 29px;
-    height: 56px;
     position: absolute;
     top: 6px;
     right: -40px;
-    background-image: url("../image/bg/greyArrow.png");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: 40% 0%;
+    width: 13px;
+    height: 26px;
+    background: url("../image/bg/css_sprites.png") -590px -293px;
   }
 }
 

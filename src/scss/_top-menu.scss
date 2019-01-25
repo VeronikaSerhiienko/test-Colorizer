@@ -10,6 +10,12 @@
     }
   }
 
+  &__logo {
+    width: 50px;
+    height: 40px;
+    background: url('../image/bg/css_sprites.png') -590px -10px;
+  }
+
   &__link {
     text-decoration: none;
     color: #acadb5;
@@ -88,13 +94,11 @@
       &:after {
         content: "";
         display: inline-block;
-        width: 15px;
-        height: 15px;
         position: absolute;
         right: 35px;
-        background-image: url('../image/bg/usa.png');
-        background-size: 70%;
-        background-repeat: no-repeat;
+        width: 10px;
+        height: 10px;
+        background: url('../image/bg/css_sprites.png') -628px -251px;
 
         @media  screen and (min-width: 700px) {
           right: -20px;
@@ -105,7 +109,9 @@
         &:after {
           content: "";
           right: 30px;
-          background-image: url('../image/bg/red1.png');
+          width: 10px;
+          height: 10px;
+          background: url('../image/bg/css_sprites.png') -630px -211px;
           
           @media  screen and (min-width: 700px) {
             right: -20px;
