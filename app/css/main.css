@@ -29,7 +29,7 @@ body {
   text-transform: uppercase;
   background-color: #05bf4b;
   border: 0;
-  border-radius: 16px;
+  border-radius: 6px;
   transition: 1s;
   cursor: pointer;
 }
@@ -114,9 +114,11 @@ body {
 }
 
 .top-menu__logo {
-  width: 50px;
-  height: 40px;
-  background: url("../image/bg/css_sprites.png") -590px -10px;
+  width: 63px;
+  height: 51px;
+  background: url("../image/bg/logo@2x.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .top-menu__link {
@@ -283,9 +285,11 @@ body {
 }
 
 .first-screen__beta-image {
-  width: 200px;
-  height: 41px;
-  background: url("../image/bg/css_sprites.png") -130px -429px;
+  width: 150px;
+  height: 31px;
+  background-image: url("../image/bg/beta@2x.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
   margin: 0 auto;
 }
 
@@ -313,9 +317,10 @@ body {
 .first-screen__logo-image {
   display: inline-block;
   vertical-align: middle;
-  background: url("../image/bg/logoFC.png");
-  width: 80px;
-  height: 88px;
+  background-image: url("../image/bg/logoFC@2x.png");
+  background-size: 100%;
+  width: 83px;
+  height: 91px;
 }
 
 .first-screen__logo-text {
@@ -325,8 +330,24 @@ body {
 }
 
 .first-screen__logo-text-title {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 750px) {
+  .first-screen__logo-text-title {
+    font-size: 32px;
+  }
+}
+
+.first-screen__logo-text-title2 {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .first-screen__logo-text-title2 {
+    font-size: 12px;
+  }
 }
 
 .first-screen__awards {
@@ -364,14 +385,8 @@ body {
 
 .first-screen__folder-menu {
   display: block;
-  width: 300px;
+  width: 306px;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 960px) {
-  .first-screen__folder-menu {
-    width: 400px;
-  }
 }
 
 .first-screen__image-link {
@@ -835,7 +850,7 @@ body {
 .from-boring-to-color__image {
   display: inline-block;
   vertical-align: top;
-  width: 300px;
+  width: 290px;
 }
 
 @media screen and (min-width: 630px) {
@@ -915,7 +930,7 @@ body {
 
 .all-the-colors-of-the-world__image {
   display: block;
-  width: 300px;
+  width: 290px;
   margin: 0 auto;
 }
 
@@ -992,7 +1007,7 @@ body {
 .make-folders-stand-out__image {
   display: inline-block;
   vertical-align: top;
-  width: 300px;
+  width: 290px;
 }
 
 @media screen and (min-width: 630px) {
@@ -1148,7 +1163,7 @@ body {
 
 .tutorials__image {
   display: block;
-  width: 300px;
+  width: 290px;
   margin: 0 auto;
 }
 
@@ -1363,10 +1378,10 @@ body {
 .join-the-beta__logo-image {
   display: inline-block;
   vertical-align: middle;
-  background: url("../image/bg/logo-footer.png");
-  background-size: 90%;
+  background: url("../image/bg/logo-footer@2x.png");
+  background-size: 100%;
   background-repeat: no-repeat;
-  width: 50px;
+  width: 52px;
   height: 60px;
   background-position: center;
 }

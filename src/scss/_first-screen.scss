@@ -41,9 +41,11 @@
   }
   
   &__beta-image {
-    width: 200px;
-    height: 41px;
-    background: url('../image/bg/css_sprites.png') -130px -429px;
+    width: 150px;
+    height: 31px;
+    background-image:  url("../image/bg/beta@2x.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     margin: 0 auto;
 
     @media  screen and (min-width: 750px) {
@@ -67,9 +69,10 @@
   &__logo-image {
     display: inline-block;
     vertical-align: middle;
-    background: url('../image/bg/logoFC.png');
-    width: 80px;
-    height: 88px;
+    background-image: url('../image/bg/logoFC@2x.png');
+    background-size: 100%; 
+    width: 83px;
+    height: 91px;
   }
 
   &__logo-text {
@@ -79,11 +82,20 @@
   }
 
   &__logo-text-title {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
+    @media  screen and (min-width: 750px) {
+      font-size: 32px;
+    }
   }
 
+  &__logo-text-title2 {
+    font-size: 10px;
 
+    @media  screen and (min-width: 750px) {
+      font-size: 12px;
+    }
+  }
 
   &__awards {
     width: 300px;
@@ -114,12 +126,8 @@
 
   &__folder-menu {
     display: block;
-    width: 300px;
+    width: 306px;
     margin-bottom: 30px;
-
-    @media  screen and (min-width: 960px) {
-      width: 400px;
-    }
   }
 
   &__image-link {

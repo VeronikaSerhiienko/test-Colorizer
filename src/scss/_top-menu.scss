@@ -11,9 +11,11 @@
   }
 
   &__logo {
-    width: 50px;
-    height: 40px;
-    background: url('../image/bg/css_sprites.png') -590px -10px;
+    width: 63px;
+    height: 51px;
+    background: url('../image/bg/logo@2x.png');
+    background-size: 100%;
+    background-repeat: no-repeat; 
   }
 
   &__link {
