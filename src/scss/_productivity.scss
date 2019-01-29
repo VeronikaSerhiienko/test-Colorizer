@@ -3,6 +3,14 @@
   text-transform: capitalize;
   background-color: #f6c500;  
   padding: 50px 10px 50px 10px;
+  
+  @media  screen and (min-width: 750px) {
+    padding: 0 10px;
+  }
+
+  @media  screen and (min-width: 2100px) {
+    padding: 0 100px;
+  }
 
   &__container {
     text-align: center;
@@ -16,6 +24,17 @@
       width: 940px;
       margin: 0 auto;
     }
+
+    @media  screen and (min-width: 1200px) {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    @media  screen and (min-width: 2100px) {
+      width: 1900px;
+      margin: 0 auto;
+    }
+
   }
 
   &__bg-image {
@@ -23,13 +42,12 @@
     
     @media  screen and (min-width: 750px) {
       display: inline-block;
-      position: relative;
-      bottom: -72px;
-      background-image: url('../image/bg/Natali.png');
-      background-size: 400px;
+      background-image: url("../image/bg/Natali.png");
+      background-size: 420px;
       background-repeat: no-repeat;
-      width: 400px;
-      height: 200px;
+      width: 420px;
+      height: 255px;
+      vertical-align: bottom;
     }
   }
 
@@ -37,6 +55,14 @@
     display: inline-block;
     text-align: center;
     width: 300px;
+
+    @media  screen and (min-width: 750px) {
+
+      vertical-align: bottom;
+      text-align: left;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
   }
 
   &__button-triangle {

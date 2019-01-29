@@ -1,0 +1,109 @@
+.first-screen {
+  
+  background-color: #2e3138;
+  padding: 50px 10px 100px;
+
+  &__container {
+
+    @media  screen and (min-width: 750px) {
+      width: 730px;
+      margin: 0 auto;
+    }
+
+    @media  screen and (min-width: 960px) {
+      width: 940px;
+      margin: 0 auto;
+    }
+  }
+
+  &__button-beta-awards {
+    width: 300px;
+    margin: 0 auto 40px;
+    text-align: center;
+
+    @media  screen and (min-width: 750px) {
+      float: right;
+    }
+
+    @media  screen and (min-width: 750px) {
+      float: right;
+      width: auto;
+    }
+  }
+
+  &__button-wrapper {
+    margin-bottom: 50px;
+
+    @media  screen and (min-width: 960px) {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+  
+  &__beta-image {
+    width: 200px;
+    height: 41px;
+    background: url('../image/bg/css_sprites.png') -130px -429px;
+    margin: 0 auto;
+    
+    @media  screen and (min-width: 960px) {
+      display: inline-block;
+      position: relative;
+      top: 5px;
+      vertical-align: top;
+      margin-left: 10px;
+    }
+  }
+
+  &__logo {
+    width: 240px;
+    height: 55px;
+    background: url('../image/bg/css_sprites.png') -330px -10px;
+    margin-bottom: 50px;
+  }
+
+  &__awards {
+    width: 300px;
+    height: 26px;
+    background: url('../image/bg/css_sprites.png') -204px -351px;
+    margin-bottom: 80px;
+  }
+
+  &__button {
+    margin: 0 auto 4px;
+  }
+
+  &__button-tip-icon {
+    height: 15px;
+    padding: 0 5px;
+  }
+
+  &__button-tip {
+    color: #a2abb7;
+    font-size: 12px;
+  }
+
+  &__folder-menu {
+    display: block;
+    width: 300px;
+    margin-bottom: 30px;
+
+    @media  screen and (min-width: 960px) {
+      width: 400px;
+    }
+  }
+
+  &__image-link {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+
+    @media  screen and (min-width: 750px) {
+      float: left;
+    }
+
+    @media  screen and (min-width: 960px) {
+      width: 400px;
+    }
+  }
+}

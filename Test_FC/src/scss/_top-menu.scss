@@ -1,0 +1,126 @@
+.top-menu {
+  background-color: #2e3138;
+  padding: 20px 40px 0;
+
+  &__container {
+    
+    @media  screen and (min-width: 960px) {
+      width: 940px;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    width: 50px;
+    height: 40px;
+    background: url('../image/bg/css_sprites.png') -590px -10px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #acadb5;
+  }
+
+  &__menu-list {
+    list-style-type: none;
+    color: #acadb5;
+  }
+
+  &__menu-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+
+    @media  screen and (min-width: 700px) {
+      float: left;
+      margin-right: 30px;
+    }
+
+
+    &--offset {
+      position: relative;
+      left: 4px;
+    }
+
+    &:last-child {
+       margin-bottom: 0;
+    };
+  }
+
+  &__arrow {
+    position: relative;
+    &:after {
+      content: "\25bc";
+      position: absolute;
+      display: inline-block;
+      top: 3px;
+      right: -15px;
+      font-size: 10px;
+    };
+  }
+
+  &__flag {
+    position: relative;
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        width: 10px;
+        height: 10px;
+        background: url('../image/bg/css_sprites.png') -628px -251px;
+
+        @media  screen and (min-width: 700px) {
+          right: -20px;
+        }
+      };
+
+      &--red {
+        
+        &:after {
+          content: "";
+          right: 30px;
+          width: 10px;
+          height: 10px;
+          background: url('../image/bg/css_sprites.png') -630px -211px;
+          
+          @media  screen and (min-width: 700px) {
+            right: -20px;
+          }
+        };
+      }
+  }
+
+  &__menu-item-select {    
+    color: #acadb5;
+    appearance: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__logo {
+    display: block;
+    float: left;
+    width: 50px;
+  }
+
+  &__navigation {
+    display: block;
+    float: right;
+  }
+}
+
+.clearfix:before, 
+.clearfix:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}

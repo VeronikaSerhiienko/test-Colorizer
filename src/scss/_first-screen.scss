@@ -45,6 +45,10 @@
     height: 41px;
     background: url('../image/bg/css_sprites.png') -130px -429px;
     margin: 0 auto;
+
+    @media  screen and (min-width: 750px) {
+      margin: 0;
+    }
     
     @media  screen and (min-width: 960px) {
       display: inline-block;
@@ -56,11 +60,30 @@
   }
 
   &__logo {
-    width: 240px;
-    height: 55px;
-    background: url('../image/bg/css_sprites.png') -330px -10px;
     margin-bottom: 50px;
+    text-align: left;
   }
+
+  &__logo-image {
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../image/bg/logoFC.png');
+    width: 80px;
+    height: 88px;
+  }
+
+  &__logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+  }
+
+  &__logo-text-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+
 
   &__awards {
     width: 300px;
@@ -71,6 +94,9 @@
 
   &__button {
     margin: 0 auto 4px;
+    @media  screen and (min-width: 750px) {
+      margin: 0 0 4px;
+    }
   }
 
   &__button-tip-icon {
@@ -81,6 +107,9 @@
   &__button-tip {
     color: #a2abb7;
     font-size: 12px;
+    @media  screen and (min-width: 750px) {
+      width: 273px;
+    }
   }
 
   &__folder-menu {

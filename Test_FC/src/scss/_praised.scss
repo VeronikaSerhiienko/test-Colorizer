@@ -1,0 +1,62 @@
+.praised {
+  background-color: #f6f9fc;
+  padding: 50px 15px;
+
+  &__wrapper {
+
+    @media  screen and (min-width: 796px) {
+      display: block;
+      margin: 0 auto;
+      width: 755px;
+    }
+  }
+
+  &__paragraph {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+    @media  screen and (min-width: 796px) {
+      display: inline-block ;
+      margin-right: 25px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+
+    @media  screen and (min-width: 796px) {
+      display: inline-block;
+    }
+  }
+
+  &__list-item {
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 30px;
+
+    @media  screen and (min-width: 796px) {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom:  0;
+      margin-right: 25px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
+        @media  screen and (min-width: 796px) {
+          margin-right: 0;
+        }
+    };
+  }
+
+  &__logo {
+    width: 189px;
+    
+    @media  screen and (min-width: 796px) {
+      width: 100px;
+    }
+  }
+}

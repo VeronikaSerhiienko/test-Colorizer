@@ -23,8 +23,8 @@
 
   &__wrapper {
     
-    @media  screen and (min-width: 750px) {
-      width: 715px;
+    @media  screen and (min-width: 810px) {
+      width: 800px;
       margin: 0 auto;
     }
   }
@@ -32,22 +32,36 @@
   &__logo {
     display: none;
     
-    @media  screen and (min-width: 768px) {
+    @media  screen and (min-width: 810px) {
       display: inline-block;
       vertical-align: middle;
       margin-right: 50px;
-      margin-bottom: 0;
-      width: 210px;
-      height: 49px;
-      background: url('../image/bg/css_sprites.png') -330px -163px;
-
+      margin-bottom: 0;   
     }
+  }
+
+  &__logo-image {
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../image/bg/logo-footer.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 60px;
+    background-position: center;
+  }
+
+  &__logo-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: bold;
   }
 
   &__folder {    
     display: none;
 
-    @media  screen and (min-width: 768px) {
+    @media  screen and (min-width: 810px) {
       display: inline-block;
       position: relative;
       top: 2px;
@@ -86,7 +100,7 @@
     display: block;
     margin: 0 auto;
 
-    @media  screen and (min-width: 768px) {
+    @media  screen and (min-width: 810px) {
       display: inline-block;
       vertical-align: middle;
     }

@@ -1,0 +1,101 @@
+.insanely-easy-to-use {
+  padding: 50px 15px 100px; 
+  text-align: center;
+
+  &__container {
+
+    @media  screen and (min-width: 750px) {
+      width: 730px;
+      margin: 0 auto;
+    }
+
+    @media  screen and (min-width: 960px) {
+      width: 940px;
+      margin: 0 auto;
+    }
+  }
+  
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin-bottom: 30px;
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    };
+
+    @media  screen and (min-width: 650px) {
+      display: inline-block;
+      margin-right: 100px;
+      margin-bottom: 0;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: -70px;
+        width: 40px;
+        height: 17px;
+        background: url('../image/bg/css_sprites.png') -590px -133px;
+      };
+
+      &:last-child {
+        margin-right: 0;
+
+        &:after {
+          display: none;
+        };
+      };
+    }
+  
+    &::before {
+      content: "1";
+      text-align: center;
+      margin-right: 5px;
+      padding: 2px 5px 8px 5px;
+      display: inline-block;
+      vertical-align: bottom;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+    };
+
+    &--second {
+
+      &::before {
+        content: "2";
+      }
+    }
+
+    &--third {
+      
+      &::before {
+        content: "3";
+      }
+    }
+  }
+
+  &__paragraph {
+    text-align: center;
+  }
+}

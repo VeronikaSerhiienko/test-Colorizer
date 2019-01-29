@@ -33,6 +33,11 @@
       width: 100%;
       margin-right: 8px;
     }
+
+    @media  screen and (min-width: 630px) {
+      width: 100%;
+      margin-right: 8px;
+    }
   }
 
   &__link {
@@ -46,9 +51,10 @@
   &__text-wrapper {
     
     @media  screen and (min-width: 630px) {
+      text-align: left;
       float: right;
       width: 55%;
-      margin-right: 20px;
+      margin-left: 20px;
     }
   }
 

@@ -1,0 +1,84 @@
+.tutorials {
+  background-color: #2e3138;
+  padding: 50px 15px 100px;
+  color: white;
+  text-align: center;
+
+  @media  screen and (min-width: 750px) {
+    text-align: left;
+  }
+
+  &__link-for-seo {
+    text-decoration: none;
+    color: white;
+    
+    &:hover {
+      text-decoration: underline;
+    };
+  }
+
+  &__container {
+
+    @media  screen and (min-width: 750px) {
+      width: 730px;
+      margin: 0 auto;
+    }
+
+    @media  screen and (min-width: 960px) {
+      width: 940px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+
+    @media  screen and (min-width: 630px) {
+      font-size: 40px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+
+    @media  screen and (min-width: 630px) {
+      float: left;
+      width: 40%;
+      margin: 0;
+    }
+  }
+
+  &__text-title {
+    margin-bottom: 30px;
+  }
+
+  &__text-paragraph {
+    margin-bottom: 30px;
+    color: #acadb5;
+
+    @media  screen and (min-width: 630px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-wrapper {
+    
+    @media  screen and (min-width: 630px) {
+      float: right;
+      width: 55%;
+    }
+  } 
+
+  &__wrapper {
+    margin-bottom: 30px;
+
+      &:last-child {     
+        margin-bottom: 0;
+      }
+  }
+}
